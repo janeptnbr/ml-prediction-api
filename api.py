@@ -11,7 +11,7 @@ app = FastAPI(
 )
 
 # Carrega o modelo treinado
-model = joblib.load("C:/Users/saojpian/Downloads/_projeto/model.joblib")
+model = joblib.load("model.joblib")
 
 # Define o formato dos dados de entrada
 class InputData(BaseModel):
