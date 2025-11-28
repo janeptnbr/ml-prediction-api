@@ -1,6 +1,6 @@
 import requests
 
-url = "http://127.0.0.1:8000/predict"
+url = "http://44.192.82.152:8000/predict"
 
 payload = {
     "features": [0.03807591, 0.05068012, 0.06169621, 0.02187235, -0.0442235,
