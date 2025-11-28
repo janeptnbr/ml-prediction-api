@@ -32,5 +32,6 @@ jobs:
         run: |
           echo "${{ secrets.EC2_SSH_KEY }}" > key.pem
           chmod 600 key.pem  # Ajusta as permissões
+          mkdir -p ~/.ssh  # Cria o diretório .ssh se não existir
           ssh-keyscan -H 44.192.82.152 >> ~/.ssh/known_hosts
           scp -i key.pem model.joblib ec2-user@44.192.82.152:/home/ec2-user/ml-prediction-api/
